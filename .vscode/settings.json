@@ -1,3 +1,29 @@
 {
-    "dart.lineLength": 120
+    "dart.lineLength": 120,
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#c5b651",
+        "activityBar.activeBorder": "#28786d",
+        "activityBar.background": "#c5b651",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#28786d",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "editorGroup.border": "#c5b651",
+        "panel.border": "#c5b651",
+        "sideBar.border": "#c5b651",
+        "statusBar.background": "#aa9c39",
+        "statusBar.border": "#aa9c39",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#84792c",
+        "tab.activeBorder": "#c5b651",
+        "titleBar.activeBackground": "#aa9c39",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.border": "#aa9c39",
+        "titleBar.inactiveBackground": "#aa9c3999",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#aa9c39",
+    "java.completion.enabled": false,
+    "java.debug.settings.enableRunDebugCodeLens": false,
+    "java.test.editor.enableShortcuts": false
 }
