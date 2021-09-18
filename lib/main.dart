@@ -13,7 +13,6 @@ import 'package:aaxep/services/cloudinary/cloud_storage_service.dart';
 import 'package:aaxep/services/firebase/firebase_service.dart';
 import 'themes.dart';
 import 'package:provider/provider.dart';
-
 void main() async {
   // Call a method to setup a global error handler so we can log all errors, including ones from native extensions.
   initLogger(() async {
