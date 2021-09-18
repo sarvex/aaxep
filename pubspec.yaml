@@ -103,7 +103,7 @@ dev_dependencies:
   msix: ^2.1.1
 
 msix_config:
-  display_name: Flutter Folio
+  display_name: AAxep
   publisher_display_name: gskinner, inc
   identity_name: 56347gskinner-xboxapps.FlutterFolio
   msix_version: 1.1.0.0

@@ -86,7 +86,7 @@ class BootstrapCommand extends commands.BaseAppCommand {
     // /// Polish (for Windows OS), to hide any movement of the window on startup.
     IoUtils.instance.showWindowWhenReady();
     if (!DeviceOS.isMacOS) {
-      IoUtils.instance.setTitle("Flutter Folio");
+      IoUtils.instance.setTitle("AAxep");
     }
     Size minSize = const Size(600, 700);
     if (kDebugMode) minSize = const Size(400, 400);

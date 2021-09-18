@@ -1,11 +1,11 @@
 {
-    "name": "Flutter Folio",
-    "short_name": "Flutter Folio",
+    "name": "AAxep",
+    "short_name": "AAxep",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Flutter Folio is a scrapbooking app that was designed to showcase Flutter’s capabilities to create apps that feel at home on every platform and device",
+    "description": "AAxep is a scrapbooking app that was designed to showcase Flutter’s capabilities to create apps that feel at home on every platform and device",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

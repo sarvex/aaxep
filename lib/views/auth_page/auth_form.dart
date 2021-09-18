@@ -64,7 +64,7 @@ class _AuthFormState extends State<AuthForm> with LoadingStateMixin {
             builder: (_, constraints) {
               AppTheme theme = context.watch();
               bool isCreatingAccount = formMode == _AuthFormMode.CreateAccount;
-              String headerText = isCreatingAccount ? "Welcome to flutter folio." : "Welcome back!";
+              String headerText = isCreatingAccount ? "Welcome to AAxep." : "Welcome back!";
               String descText = isCreatingAccount
                   ? "Create an account to start your scrapbook!"
                   : "Log into your account to view your existing scrapbooks or start a new one.";
@@ -177,7 +177,7 @@ class _AuthFormState extends State<AuthForm> with LoadingStateMixin {
                                     separatorBuilder: () => HSpace.sm,
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      const UiText(text: "Learn more about Flutter Folio?"),
+                                      const UiText(text: "Learn more about AAxep?"),
                                       ContextMenuRegion(
                                         contextMenu:
                                             const LinkContextMenu(url: 'https://github.com/gskinnerTeam/flutter-folio'),

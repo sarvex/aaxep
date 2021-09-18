@@ -13,6 +13,7 @@ import 'package:aaxep/services/cloudinary/cloud_storage_service.dart';
 import 'package:aaxep/services/firebase/firebase_service.dart';
 import 'themes.dart';
 import 'package:provider/provider.dart';
+
 void main() async {
   // Call a method to setup a global error handler so we can log all errors, including ones from native extensions.
   initLogger(() async {
@@ -92,7 +93,7 @@ class _AppBootstrapperState extends State<AppBootstrapper> {
     // Inject desired density into MaterialTheme for free animation when values change
     materialTheme = ThemeData(visualDensity: VisualDensity(horizontal: density, vertical: density));
     return MaterialApp.router(
-      title: "Flutter Folio",
+      title: "AAxep",
       debugShowCheckedModeBanner: false,
       theme: materialTheme,
       // Use a custom route/delegate to change navigation // TODO: Replace with VRouter/NavStack

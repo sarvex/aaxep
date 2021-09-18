@@ -21,8 +21,7 @@ class EmptyEditorView extends StatelessWidget {
               child: UiText(
                   span: TextSpan(children: [
                     TextSpan(
-                        text: "Welcome to Flutter Folio!\n\n",
-                        style: TextStyles.title1.copyWith(fontWeight: FontWeight.w800)),
+                        text: "Welcome to AAxep!\n\n", style: TextStyles.title1.copyWith(fontWeight: FontWeight.w800)),
                     const TextSpan(
                         text: "- Use your phone or desktop to upload photos into your Folios\n\n"
                             "- Design your scrapbooks on larger screen devices like desktop, laptop and tablet.\n\n"

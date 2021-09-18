@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Flutter Folio
+Name=AAxep
 Comment=A scrapbooking app that feels great on all your devices
 Exec=flutter-folio
 Icon=${SNAP}/meta/gui/flutter-folio.png

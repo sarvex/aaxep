@@ -87,7 +87,7 @@ class _EmptyHomeView extends StatelessWidget {
         padding: EdgeInsets.all(Insets.offset),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           const Spacer(),
-          Text("Welcome to Flutter Folio!", style: TextStyles.h1.copyWith(color: Colors.white)),
+          Text("Welcome to AAxep!", style: TextStyles.h1.copyWith(color: Colors.white)),
           VSpace.sm,
           SizedBox(
             width: 380,
