@@ -25,5 +25,6 @@
     "peacock.color": "#aa9c39",
     "java.completion.enabled": false,
     "java.debug.settings.enableRunDebugCodeLens": false,
-    "java.test.editor.enableShortcuts": false
+    "java.test.editor.enableShortcuts": false,
+    "cmake.configureOnOpen": false
 }
