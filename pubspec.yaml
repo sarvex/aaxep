@@ -42,7 +42,7 @@ dependencies:
   flutter_blurhash: ^0.6.0
   flutter_form_builder_extra_fields: ^7.0.0-alpha
   flutter_form_builder_file_picker: ^1.1.0  
-  flutter_form_builder_phone_filed: ^0.3.0
+  flutter_form_builder_phone_field: ^0.3.0
   flutter_form_builder: ^6.1.0
   flutter_lorem: ^2.0.0
   flutter_native_splash: ^1.2.3

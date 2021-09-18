@@ -2,7 +2,7 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:aaxep/_utils/input_utils.dart';
-import 'package:aaxep/_widgets/animated/animated_scale.dart';
+import 'package:aaxep/_widgets/animated/animated_scale.dart' as local;
 import 'package:aaxep/_widgets/gradient_container.dart';
 import 'package:aaxep/_widgets/rounded_card.dart';
 import 'package:aaxep/core_packages.dart';
@@ -78,7 +78,7 @@ class _BookCoverWidgetState extends State<BookCoverWidget> {
                 /// /////////////////////////////
                 /// Background Image
                 // Animated scale for when we mouse-over
-                AnimatedScale(
+                local.AnimatedScale(
                   duration: Times.slow,
                   begin: 1,
                   end: isClickable ? 1.1 : 1,

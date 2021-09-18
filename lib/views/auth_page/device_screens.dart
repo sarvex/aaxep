@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:aaxep/_widgets/animated/animated_scale.dart';
+import 'package:aaxep/_widgets/animated/animated_scale.dart' as widget;
 import 'package:aaxep/_widgets/gradient_container.dart';
 import 'package:aaxep/core_packages.dart';
 
@@ -85,7 +85,7 @@ class _LandingPageImage extends StatelessWidget {
           left: offset.dx,
           top: offset.dy,
           height: height,
-          child: AnimatedScale(
+          child: widget.AnimatedScale(
             begin: 1,
             end: scale,
             duration: Times.fast,
