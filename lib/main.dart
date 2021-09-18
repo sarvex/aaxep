@@ -40,7 +40,7 @@ void main() async {
         Provider.value(value: firebase),
         // Cloudinary
         Provider(create: (_) => CloudStorageService()),
-        // App Model - Stores data related to global settings or app modes
+        // App Model - Stores data elated to global settings or app modes
         ChangeNotifierProvider.value(value: appModel),
         // BooksModel - Stores data about the content in the app
         ChangeNotifierProvider.value(value: booksModel),
