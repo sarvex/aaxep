@@ -1,12 +1,12 @@
 import 'package:context_menus/context_menus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_folio/_utils/color_utils.dart';
-import 'package:flutter_folio/commands/books/delete_page_command.dart';
-import 'package:flutter_folio/commands/books/update_page_command.dart';
-import 'package:flutter_folio/core_packages.dart';
-import 'package:flutter_folio/data/book_data.dart';
-import 'package:flutter_folio/models/app_model.dart';
+import 'package:aaxep/_utils/color_utils.dart';
+import 'package:aaxep/commands/books/delete_page_command.dart';
+import 'package:aaxep/commands/books/update_page_command.dart';
+import 'package:aaxep/core_packages.dart';
+import 'package:aaxep/data/book_data.dart';
+import 'package:aaxep/models/app_model.dart';
 
 import '../../../_utils/timed/debouncer.dart';
 

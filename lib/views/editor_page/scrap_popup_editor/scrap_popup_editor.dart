@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:flutter_folio/_widgets/alignments.dart';
-import 'package:flutter_folio/_widgets/decorated_container.dart';
-import 'package:flutter_folio/_widgets/sized_and_translated.dart';
-import 'package:flutter_folio/core_packages.dart';
-import 'package:flutter_folio/data/book_data.dart';
-import 'package:flutter_folio/models/app_model.dart';
+import 'package:aaxep/_widgets/alignments.dart';
+import 'package:aaxep/_widgets/decorated_container.dart';
+import 'package:aaxep/_widgets/sized_and_translated.dart';
+import 'package:aaxep/core_packages.dart';
+import 'package:aaxep/data/book_data.dart';
+import 'package:aaxep/models/app_model.dart';
 
 import 'animated_menu_panel.dart';
 import 'scrap_popup_panel_alignment.dart';

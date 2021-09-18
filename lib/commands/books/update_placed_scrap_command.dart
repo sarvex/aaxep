@@ -1,7 +1,7 @@
-import 'package:flutter_folio/_utils/time_utils.dart';
-import 'package:flutter_folio/commands/books/update_book_modified_command.dart';
-import 'package:flutter_folio/commands/commands.dart';
-import 'package:flutter_folio/data/book_data.dart';
+import 'package:aaxep/_utils/time_utils.dart';
+import 'package:aaxep/commands/books/update_book_modified_command.dart';
+import 'package:aaxep/commands/commands.dart';
+import 'package:aaxep/data/book_data.dart';
 
 class UpdatePageScrapCommand extends BaseAppCommand {
   Future<void> run(PlacedScrapItem scrapItem, {bool localOnly = false}) async {

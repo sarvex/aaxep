@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/_utils/string_utils.dart';
-import 'package:flutter_folio/_widgets/app_image.dart';
-import 'package:flutter_folio/_widgets/decorated_container.dart';
-import 'package:flutter_folio/core_packages.dart';
-import 'package:flutter_folio/styled_widgets/styled_load_spinner.dart';
+import 'package:aaxep/_utils/string_utils.dart';
+import 'package:aaxep/_widgets/app_image.dart';
+import 'package:aaxep/_widgets/decorated_container.dart';
+import 'package:aaxep/core_packages.dart';
+import 'styled_widgets/styled_load_spinner.dart';
 
 import 'scrap_pile_picker.dart';
 

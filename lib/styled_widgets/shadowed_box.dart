@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/_widgets/decorated_container.dart';
-import 'package:flutter_folio/core_packages.dart';
+import 'package:aaxep/_widgets/decorated_container.dart';
+import 'package:aaxep/core_packages.dart';
 
 class ShadowedBg extends StatelessWidget {
   const ShadowedBg(this.color, {Key? key, this.ignorePointer = true}) : super(key: key);

@@ -3,11 +3,11 @@ import 'dart:math';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_folio/_widgets/listenable_builder.dart';
-import 'package:flutter_folio/_widgets/sized_and_translated.dart';
-import 'package:flutter_folio/core_packages.dart';
-import 'package:flutter_folio/views/editor_page/scrapboard/movable_scrap_selection_box.dart';
-import 'package:flutter_folio/views/editor_page/scrapboard/scrap_data.dart';
+import 'package:aaxep/_widgets/listenable_builder.dart';
+import 'package:aaxep/_widgets/sized_and_translated.dart';
+import 'package:aaxep/core_packages.dart';
+import 'package:aaxep/views/editor_page/scrapboard/movable_scrap_selection_box.dart';
+import 'package:aaxep/views/editor_page/scrapboard/scrap_data.dart';
 
 // Wraps some content in a draggable box and with editing controls
 // Provides basic support for translation, selection and scale events

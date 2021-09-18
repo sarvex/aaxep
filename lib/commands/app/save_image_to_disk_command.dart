@@ -1,7 +1,7 @@
 import 'package:file_selector/file_selector.dart' as file_selector;
 import 'package:file_selector/file_selector.dart';
-import 'package:flutter_folio/_utils/device_info.dart';
-import 'package:flutter_folio/commands/commands.dart';
+import 'package:aaxep/_utils/device_info.dart';
+import 'package:aaxep/commands/commands.dart';
 
 class SaveImageToDiskCommand extends BaseAppCommand {
   //TODO: Add support for web https://github.com/flutter/flutter/issues/78142

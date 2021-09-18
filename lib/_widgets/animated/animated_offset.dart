@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/_widgets/alignments.dart';
+import 'package:aaxep/_widgets/alignments.dart';
 
 class AnimatedOffset extends StatelessWidget {
   const AnimatedOffset({

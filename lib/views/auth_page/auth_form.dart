@@ -3,11 +3,11 @@ import 'package:email_validator/email_validator.dart';
 import 'package:flextras/flextras.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/_utils/input_utils.dart';
-import 'package:flutter_folio/_widgets/mixins/loading_state_mixin.dart';
-import 'package:flutter_folio/commands/app/authenticate_user_command.dart';
-import 'package:flutter_folio/core_packages.dart';
-import 'package:flutter_folio/styled_widgets/styled_load_spinner.dart';
+import 'package:aaxep/_utils/input_utils.dart';
+import 'package:aaxep/_widgets/mixins/loading_state_mixin.dart';
+import 'package:aaxep/commands/app/authenticate_user_command.dart';
+import 'package:aaxep/core_packages.dart';
+import 'package:aaxep/styled_widgets/styled_load_spinner.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class AuthForm extends StatefulWidget {

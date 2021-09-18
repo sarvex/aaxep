@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_driver/driver_extension.dart';
-import 'package:flutter_folio/data/app_user.dart';
-import 'package:flutter_folio/data/book_data.dart';
-import 'package:flutter_folio/main.dart';
-import 'package:flutter_folio/models/app_model.dart';
-import 'package:flutter_folio/models/books_model.dart';
-import 'package:flutter_folio/services/cloudinary/cloud_storage_service.dart';
-import 'package:flutter_folio/services/firebase/firebase_service.dart';
+import 'package:aaxep/data/app_user.dart';
+import 'package:aaxep/data/book_data.dart';
+import 'package:aaxep/main.dart';
+import 'package:aaxep/models/app_model.dart';
+import 'package:aaxep/models/books_model.dart';
+import 'package:aaxep/services/cloudinary/cloud_storage_service.dart';
+import 'package:aaxep/services/firebase/firebase_service.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -23,7 +23,7 @@ void main() {
   runApp(MultiProvider(
     providers: [
       // Firebase
-      Provider.value(value: firebase),
+      Provider<FirebaseService>.value(value: firebase),
       // Cloudinary
       Provider(create: (_) => CloudStorageService()),
       // App Model - Stores data related to global settings or app modes

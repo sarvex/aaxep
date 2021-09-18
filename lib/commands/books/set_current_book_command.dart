@@ -1,7 +1,7 @@
-import 'package:flutter_folio/_utils/input_utils.dart';
-import 'package:flutter_folio/commands/books/refresh_current_book_command.dart';
-import 'package:flutter_folio/commands/commands.dart';
-import 'package:flutter_folio/data/book_data.dart';
+import 'package:aaxep/_utils/input_utils.dart';
+import 'package:aaxep/commands/books/refresh_current_book_command.dart';
+import 'package:aaxep/commands/commands.dart';
+import 'package:aaxep/data/book_data.dart';
 
 import 'set_current_page_command.dart';
 

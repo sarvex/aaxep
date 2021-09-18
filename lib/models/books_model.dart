@@ -1,6 +1,6 @@
-import 'package:flutter_folio/_utils/easy_notifier.dart';
-import 'package:flutter_folio/_utils/string_utils.dart';
-import 'package:flutter_folio/data/book_data.dart';
+import 'package:aaxep/_utils/easy_notifier.dart';
+import 'package:aaxep/_utils/string_utils.dart';
+import 'package:aaxep/data/book_data.dart';
 
 class BooksModel extends EasyNotifier {
   List<T> copyList<T>(List<T>? list) => List.from(list ?? []);

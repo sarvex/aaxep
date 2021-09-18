@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/core_packages.dart';
+import 'package:aaxep/core_packages.dart';
 
 class BaseStyledDialog extends StatelessWidget {
   final Color? bgColor;

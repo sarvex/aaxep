@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/_utils/string_utils.dart';
-import 'package:flutter_folio/_widgets/rounded_card.dart';
-import 'package:flutter_folio/commands/books/set_current_page_command.dart';
-import 'package:flutter_folio/core_packages.dart';
-import 'package:flutter_folio/data/book_data.dart';
-import 'package:flutter_folio/models/app_model.dart';
+import 'package:aaxep/_utils/string_utils.dart';
+import 'package:aaxep/_widgets/rounded_card.dart';
+import 'package:aaxep/commands/books/set_current_page_command.dart';
+import 'package:aaxep/core_packages.dart';
+import 'package:aaxep/data/book_data.dart';
+import 'package:aaxep/models/app_model.dart';
 
 class SimplePagesMenu extends StatelessWidget {
   const SimplePagesMenu(this.pages, {required this.selectedPageId, Key? key}) : super(key: key);

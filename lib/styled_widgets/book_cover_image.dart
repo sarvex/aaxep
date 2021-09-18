@@ -1,8 +1,8 @@
 // Wraps a CachedNetworkImage + a fallback placeholder if no image is set.
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/_utils/string_utils.dart';
-import 'package:flutter_folio/_widgets/app_image.dart';
-import 'package:flutter_folio/data/book_data.dart';
+import 'package:aaxep/_utils/string_utils.dart';
+import 'package:aaxep/_widgets/app_image.dart';
+import 'package:aaxep/data/book_data.dart';
 
 /// An image that falls back to a placeholder img
 class BookCoverImage extends StatefulWidget {

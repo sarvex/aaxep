@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_folio/_utils/string_utils.dart';
-import 'package:flutter_folio/_widgets/decorated_container.dart';
-import 'package:flutter_folio/_widgets/positioned_all.dart';
-import 'package:flutter_folio/_widgets/rounded_card.dart';
-import 'package:flutter_folio/core_packages.dart';
+import 'package:aaxep/_utils/string_utils.dart';
+import 'package:aaxep/_widgets/decorated_container.dart';
+import 'package:aaxep/_widgets/positioned_all.dart';
+import 'package:aaxep/_widgets/rounded_card.dart';
+import 'package:aaxep/core_packages.dart';
 import 'package:provider/provider.dart';
 
 class BtnColors {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/core_packages.dart';
-import 'package:flutter_folio/styled_widgets/app_icons.dart';
+import 'package:aaxep/core_packages.dart';
+import 'package:aaxep/styled_widgets/app_icons.dart';
 
 class ContextMenuIcon extends StatelessWidget {
   final AppIcons icon;

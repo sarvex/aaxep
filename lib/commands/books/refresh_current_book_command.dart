@@ -1,6 +1,6 @@
-import 'package:flutter_folio/commands/commands.dart';
-import 'package:flutter_folio/data/book_data.dart';
-import 'package:flutter_folio/services/cloudinary/cloud_storage_service.dart';
+import 'package:aaxep/commands/commands.dart';
+import 'package:aaxep/data/book_data.dart';
+import 'package:aaxep/services/cloudinary/cloud_storage_service.dart';
 
 class RefreshCurrentBookCommand extends BaseAppCommand {
   Future<void> run({bool book = true, bool pages = true, bool scraps = true}) async {

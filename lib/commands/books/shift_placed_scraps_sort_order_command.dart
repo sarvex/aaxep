@@ -1,6 +1,6 @@
-import 'package:flutter_folio/commands/commands.dart';
-import 'package:flutter_folio/data/book_data.dart';
-import 'package:flutter_folio/styled_widgets/toaster.dart';
+import 'package:aaxep/commands/commands.dart';
+import 'package:aaxep/data/book_data.dart';
+import 'package:aaxep/styled_widgets/toaster.dart';
 
 class ShiftPlacedScrapsSortOrderCommand extends BaseAppCommand {
   Future<void> run(int indexesToShift, PlacedScrapItem scrapItem) async {

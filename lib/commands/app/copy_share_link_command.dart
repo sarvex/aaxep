@@ -1,8 +1,8 @@
 import 'package:flutter/services.dart';
-import 'package:flutter_folio/_utils/device_info.dart';
-import 'package:flutter_folio/commands/commands.dart';
-import 'package:flutter_folio/routing/app_link.dart';
-import 'package:flutter_folio/styled_widgets/toaster.dart';
+import 'package:aaxep/_utils/device_info.dart';
+import 'package:aaxep/commands/commands.dart';
+import 'package:aaxep/routing/app_link.dart';
+import 'package:aaxep/styled_widgets/toaster.dart';
 import 'package:share/share.dart';
 
 import '../../_utils/timed/cooldown.dart';

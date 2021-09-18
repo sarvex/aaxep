@@ -1,14 +1,14 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_folio/_utils/input_utils.dart';
-import 'package:flutter_folio/_widgets/animated/animated_scale.dart';
-import 'package:flutter_folio/_widgets/gradient_container.dart';
-import 'package:flutter_folio/_widgets/rounded_card.dart';
-import 'package:flutter_folio/core_packages.dart';
-import 'package:flutter_folio/data/book_data.dart';
-import 'package:flutter_folio/views/home_page/book_cover/book_cover_large.dart';
-import 'package:flutter_folio/views/home_page/book_cover/book_cover_small.dart';
+import 'package:aaxep/_utils/input_utils.dart';
+import 'package:aaxep/_widgets/animated/animated_scale.dart';
+import 'package:aaxep/_widgets/gradient_container.dart';
+import 'package:aaxep/_widgets/rounded_card.dart';
+import 'package:aaxep/core_packages.dart';
+import 'package:aaxep/data/book_data.dart';
+import 'package:aaxep/views/home_page/book_cover/book_cover_large.dart';
+import 'package:aaxep/views/home_page/book_cover/book_cover_small.dart';
 import 'package:provider/provider.dart';
 
 /// Represents the Cover for one ScrapBook.

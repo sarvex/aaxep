@@ -1,13 +1,13 @@
 import 'package:context_menus/context_menus.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/commands/app/save_image_to_disk_command.dart';
-import 'package:flutter_folio/commands/books/delete_page_scrap_command.dart';
-import 'package:flutter_folio/commands/books/shift_placed_scraps_sort_order_command.dart';
-import 'package:flutter_folio/commands/books/update_current_book_cover_photo_command.dart';
-import 'package:flutter_folio/core_packages.dart';
-import 'package:flutter_folio/data/book_data.dart';
-import 'package:flutter_folio/models/books_model.dart';
-import 'package:flutter_folio/styled_widgets/context_menus/context_menu_widgets.dart';
+import 'package:aaxep/commands/app/save_image_to_disk_command.dart';
+import 'package:aaxep/commands/books/delete_page_scrap_command.dart';
+import 'package:aaxep/commands/books/shift_placed_scraps_sort_order_command.dart';
+import 'package:aaxep/commands/books/update_current_book_cover_photo_command.dart';
+import 'package:aaxep/core_packages.dart';
+import 'package:aaxep/data/book_data.dart';
+import 'package:aaxep/models/books_model.dart';
+import 'package:aaxep/styled_widgets/context_menus/context_menu_widgets.dart';
 
 class ScrapContextMenu extends StatefulWidget {
   const ScrapContextMenu({Key? key, required this.scrap}) : super(key: key);

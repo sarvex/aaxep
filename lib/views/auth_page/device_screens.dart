@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/_widgets/animated/animated_scale.dart';
-import 'package:flutter_folio/_widgets/gradient_container.dart';
-import 'package:flutter_folio/core_packages.dart';
+import 'package:aaxep/_widgets/animated/animated_scale.dart';
+import 'package:aaxep/_widgets/gradient_container.dart';
+import 'package:aaxep/core_packages.dart';
 
 class DeviceScreens extends StatelessWidget {
   const DeviceScreens(this.portraitMode, {Key? key}) : super(key: key);

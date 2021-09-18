@@ -1,13 +1,13 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/_utils/device_info.dart';
-import 'package:flutter_folio/_utils/input_utils.dart';
-import 'package:flutter_folio/_utils/native_window_utils/window_utils.dart';
-import 'package:flutter_folio/core_packages.dart';
-import 'package:flutter_folio/models/app_model.dart';
-import 'package:flutter_folio/models/books_model.dart';
-import 'package:flutter_folio/views/app_title_bar/rounded_profile_button.dart';
-import 'package:flutter_folio/views/app_title_bar/touch_mode_toggle_btn.dart';
+import 'package:aaxep/_utils/device_info.dart';
+import 'package:aaxep/_utils/input_utils.dart';
+import 'package:aaxep/_utils/native_window_utils/window_utils.dart';
+import 'package:aaxep/core_packages.dart';
+import 'package:aaxep/models/app_model.dart';
+import 'package:aaxep/models/books_model.dart';
+import 'package:aaxep/views/app_title_bar/rounded_profile_button.dart';
+import 'package:aaxep/views/app_title_bar/touch_mode_toggle_btn.dart';
 
 class AppTitleBar extends StatelessWidget {
   const AppTitleBar({Key? key}) : super(key: key);

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/commands/books/update_placed_scrap_command.dart';
-import 'package:flutter_folio/data/book_data.dart';
-import 'package:flutter_folio/styled_widgets/dialogs/base_dialog.dart';
-import 'package:flutter_folio/styled_widgets/labeled_text_input.dart';
-import 'package:flutter_folio/styles.dart';
+import 'package:aaxep/commands/books/update_placed_scrap_command.dart';
+import 'package:aaxep/data/book_data.dart';
+import 'package:aaxep/styled_widgets/dialogs/base_dialog.dart';
+import 'package:aaxep/styled_widgets/labeled_text_input.dart';
+import 'package:aaxep/styles.dart';
 
 class ScrapTextEditorDialog extends StatelessWidget {
   const ScrapTextEditorDialog(this.item, {Key? key}) : super(key: key);

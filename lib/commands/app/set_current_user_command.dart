@@ -1,7 +1,7 @@
-import 'package:flutter_folio/_utils/string_utils.dart';
-import 'package:flutter_folio/commands/commands.dart';
-import 'package:flutter_folio/core_packages.dart';
-import 'package:flutter_folio/data/app_user.dart';
+import 'package:aaxep/_utils/string_utils.dart';
+import 'package:aaxep/commands/commands.dart';
+import 'package:aaxep/core_packages.dart';
+import 'package:aaxep/data/app_user.dart';
 
 import 'refresh_menubar_command.dart';
 

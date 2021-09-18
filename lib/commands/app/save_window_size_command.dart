@@ -1,7 +1,7 @@
 import 'package:desktop_window/desktop_window.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/_utils/device_info.dart';
-import 'package:flutter_folio/commands/commands.dart';
+import 'package:aaxep/_utils/device_info.dart';
+import 'package:aaxep/commands/commands.dart';
 
 class SaveWindowSizeCommand extends BaseAppCommand {
   Future<void> run() async {

@@ -2,12 +2,12 @@ import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/_utils/input_utils.dart';
-import 'package:flutter_folio/_utils/string_utils.dart';
-import 'package:flutter_folio/_widgets/decorated_container.dart';
-import 'package:flutter_folio/_widgets/gradient_container.dart';
-import 'package:flutter_folio/core_packages.dart';
-import 'package:flutter_folio/models/app_model.dart';
+import 'package:aaxep/_utils/input_utils.dart';
+import 'package:aaxep/_utils/string_utils.dart';
+import 'package:aaxep/_widgets/decorated_container.dart';
+import 'package:aaxep/_widgets/gradient_container.dart';
+import 'package:aaxep/core_packages.dart';
+import 'package:aaxep/models/app_model.dart';
 
 class GlassCard extends StatelessWidget {
   const GlassCard({Key? key, required this.child, this.alpha = .6, this.radius}) : super(key: key);

@@ -1,7 +1,7 @@
-import 'package:flutter_folio/_utils/logger.dart';
-import 'package:flutter_folio/commands/app/set_current_user_command.dart';
-import 'package:flutter_folio/commands/commands.dart';
-import 'package:flutter_folio/data/app_user.dart';
+import 'package:aaxep/_utils/logger.dart';
+import 'package:aaxep/commands/app/set_current_user_command.dart';
+import 'package:aaxep/commands/commands.dart';
+import 'package:aaxep/data/app_user.dart';
 
 class AuthenticateUserCommand extends BaseAppCommand {
   Future<bool> run({required String email, required String pass, required bool createNew}) async {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/_widgets/decorated_container.dart';
-import 'package:flutter_folio/commands/books/create_folio_command.dart';
-import 'package:flutter_folio/core_packages.dart';
+import 'package:aaxep/_widgets/decorated_container.dart';
+import 'package:aaxep/commands/books/create_folio_command.dart';
+import 'package:aaxep/core_packages.dart';
 import 'package:provider/provider.dart';
 
 class HomeNavTabMenu extends StatelessWidget {

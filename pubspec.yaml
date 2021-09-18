@@ -1,7 +1,7 @@
 name: aaxep
 description: Moving made Simple
 publish_to: "none"
-version: 1.2.3
+version: 1.0.0+1
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -12,14 +12,23 @@ dependencies:
 
   anchored_popups: ^0.1.0
   animate_do: ^2.0.0
-  auto_size_text:
+  animated_text_kit: ^4.2.1
+  animations: ^2.0.1
+  auto_size_text: ^3.0.0-nullsafety.0
+  badges: ^2.0.1
   bitsdojo_window: ^0.1.0+1
-  cached_network_image: ^3.0.0
+  bloc_pattern: ^3.0.0
+  bottom_navy_bar: ^6.0.0
+  cached_network_image: ^3.1.0
   cloudinary_public: ^0.8.0
+  concentric_transition: ^1.0.1+1
   context_menus: ^0.1.0+5
+  cupertino_icons: ^1.0.2
   darq: ^1.0.0-dev.3
   desktop_window: ^0.4.0
+  dio: ^4.0.0
   dotted_border: ^2.0.0-nullsafety.0
+  easy_localization: ^3.0.0
   email_validator: ^2.0.1
   enum_to_string: ^2.0.0-nullsafety.1
   file_selector_linux: ^0.0.2
@@ -27,22 +36,46 @@ dependencies:
   file_selector_web: ^0.8.1
   file_selector_windows: ^0.0.2
   file_selector: ^0.8.2
+  fl_chart: ^0.40.0
   flextras: ^0.0.1
+  flutter_bloc: ^7.2.0
+  flutter_blurhash: ^0.6.0
+  flutter_form_builder_extra_fields: ^7.0.0-alpha
+  flutter_form_builder_file_picker: ^1.1.0  
+  flutter_form_builder_phone_filed: ^0.3.0
+  flutter_form_builder: ^6.1.0
   flutter_lorem: ^2.0.0
+  flutter_native_splash: ^1.2.3
   flutter_svg: ^0.22.0
+  flutter_typeahead: ^3.2.1
+  font_awesome_flutter: ^9.1.0
+  forme: ^2.5.3+1
+  geolocator: ^7.6.0
+  get: ^4.3.8
+  google_fonts: ^2.1.0
   image_picker: ^0.8.0+4
   image_size_getter: ^1.0.0
+  internationalization: ^3.1.0
+  intro_slider: ^3.0.2
+  local_auth: ^1.1.7
+  lottie: ^1.1.0
   multi_image_picker: ^4.8.00
+  package_info: ^2.0.2
   path_provider: ^2.0.1
-  provider: ^5.0.0
+  provider: ^6.0.0
+  qr_flutter: ^4.0.0
   random_color: ^1.0.6-nullsafety
+  rxdart: ^0.27.2
   share: ^2.0.1
   shared_preferences: ^2.0.4
+  shimmer: ^2.0.0
   sized_context: ^1.0.0+1
   statsfl: ^2.0.1+1
+  supercharged: ^2.0.0
   system_info: ^1.0.0
   timeago: ^3.0.2
   universal_platform: ^1.0.0-nullsafety
+  upi_pay: ^1.0.1
   url_launcher: ^6.0.2
   uuid: ^3.0.1
   visibility_detector: ^0.2.0-nullsafety.1

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/_utils/input_utils.dart';
-import 'package:flutter_folio/_widgets/animated/animated_fractional_offset.dart';
-import 'package:flutter_folio/core_packages.dart';
-import 'package:flutter_folio/views/user_profile_card/user_profile_form.dart';
+import 'package:aaxep/_utils/input_utils.dart';
+import 'package:aaxep/_widgets/animated/animated_fractional_offset.dart';
+import 'package:aaxep/core_packages.dart';
+import 'package:aaxep/views/user_profile_card/user_profile_form.dart';
 
 /// Wraps a [UserProfileForm] with some constraints, and a "slide down" animation.
 class UserProfileCard extends StatelessWidget {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/commands/books/create_placed_scraps_command.dart';
-import 'package:flutter_folio/commands/books/update_page_count_command.dart';
-import 'package:flutter_folio/commands/commands.dart';
-import 'package:flutter_folio/data/book_data.dart';
+import 'package:aaxep/commands/books/create_placed_scraps_command.dart';
+import 'package:aaxep/commands/books/update_page_count_command.dart';
+import 'package:aaxep/commands/commands.dart';
+import 'package:aaxep/data/book_data.dart';
 import 'package:uuid/uuid.dart';
 
 class CreatePageCommand extends BaseAppCommand {

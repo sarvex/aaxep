@@ -1,18 +1,18 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/commands/books/set_current_book_command.dart';
-import 'package:flutter_folio/commands/books/set_current_page_command.dart';
-import 'package:flutter_folio/core_packages.dart';
-import 'package:flutter_folio/data/book_data.dart';
-import 'package:flutter_folio/main_app_scaffold.dart';
-import 'package:flutter_folio/models/app_model.dart';
-import 'package:flutter_folio/models/books_model.dart';
-import 'package:flutter_folio/routing/app_link.dart';
-import 'package:flutter_folio/services/firebase/firebase_service.dart';
-import 'package:flutter_folio/views/auth_page/auth_page.dart';
-import 'package:flutter_folio/views/editor_page/editor_page.dart';
-import 'package:flutter_folio/views/home_page/home_page.dart';
-import 'package:flutter_folio/views/splash_page.dart';
+import 'package:aaxep/commands/books/set_current_book_command.dart';
+import 'package:aaxep/commands/books/set_current_page_command.dart';
+import 'package:aaxep/core_packages.dart';
+import 'package:aaxep/data/book_data.dart';
+import 'package:aaxep/main_app_scaffold.dart';
+import 'package:aaxep/models/app_model.dart';
+import 'package:aaxep/models/books_model.dart';
+import 'package:aaxep/routing/app_link.dart';
+import 'package:aaxep/services/firebase/firebase_service.dart';
+import 'package:aaxep/views/auth_page/auth_page.dart';
+import 'package:aaxep/views/editor_page/editor_page.dart';
+import 'package:aaxep/views/home_page/home_page.dart';
+import 'package:aaxep/views/splash_page.dart';
 
 class AppRouterDelegate extends RouterDelegate<AppLink> with ChangeNotifier {
   final AppModel appModel;

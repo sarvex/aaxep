@@ -3,8 +3,8 @@ import 'dart:ui';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/_utils/time_utils.dart';
-import 'package:flutter_folio/views/editor_page/scrapboard/scrap_data.dart';
+import 'package:aaxep/_utils/time_utils.dart';
+import 'package:aaxep/views/editor_page/scrapboard/scrap_data.dart';
 import 'package:flutter_lorem/flutter_lorem.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 

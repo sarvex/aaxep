@@ -1,4 +1,4 @@
-import 'package:flutter_folio/_utils/string_utils.dart';
+import 'package:aaxep/_utils/string_utils.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'app_user.freezed.dart';

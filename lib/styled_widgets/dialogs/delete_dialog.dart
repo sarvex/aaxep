@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/_utils/string_utils.dart';
-import 'package:flutter_folio/core_packages.dart';
+import 'package:aaxep/_utils/string_utils.dart';
+import 'package:aaxep/core_packages.dart';
 import 'package:universal_platform/universal_platform.dart';
 
 class DeleteDialog extends StatelessWidget {

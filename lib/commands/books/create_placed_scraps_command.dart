@@ -1,9 +1,9 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_folio/commands/books/update_book_modified_command.dart';
-import 'package:flutter_folio/commands/commands.dart';
-import 'package:flutter_folio/data/book_data.dart';
+import 'package:aaxep/commands/books/update_book_modified_command.dart';
+import 'package:aaxep/commands/commands.dart';
+import 'package:aaxep/data/book_data.dart';
 import 'package:uuid/uuid.dart';
 
 class CreatePlacedScrapCommand extends BaseAppCommand {
