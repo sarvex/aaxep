@@ -53,7 +53,7 @@ class NativeFirebaseService extends FirebaseService {
   @override
   Stream<Map<String, dynamic>>? getDocStream(List<String> keys) {
     return _getDoc(keys)?.snapshots().map((doc) {
-      final data = doc.data() ?? {};
+      final data = doc.data() as Map<String, dynamic>;
       return data..['documentId'] = doc.id;
     });
   }
@@ -62,10 +62,8 @@ class NativeFirebaseService extends FirebaseService {
   Stream<List<Map<String, dynamic>>>? getListStream(List<String> keys) {
     return _getCollection(keys)?.snapshots().map(
       (QuerySnapshot snapshot) {
-        return snapshot.docs.map((d) {
-          final data = d.data();
-          return data..['documentId'] = d.id;
-        }).toList();
+        List<Map<String, dynamic>> dataList = snapshot.docs.map((data) => data.data() as Map<String,dynamic>).toList();
+        return dataList;
       },
     );
   }
@@ -99,7 +97,7 @@ class NativeFirebaseService extends FirebaseService {
     try {
       DocumentSnapshot? d = (await _getDoc(keys)?.get());
       if (d != null) {
-        return (d.data() ?? {})..['documentId'] = d.id;
+        // return (d.data() ?? {})..['documentId'] = d.id;
       }
     } catch (e) {
       print(e);
@@ -113,10 +111,13 @@ class NativeFirebaseService extends FirebaseService {
     QuerySnapshot? snapshot = (await _getCollection(keys)?.get());
     if (snapshot != null) {
       for (final d in snapshot.docs) {
-        (d.data())['documentId'] = d.id;
+        Map<String, dynamic> data =  d.data() as Map<String, dynamic>;
+        data['documentId'] = d.id;
       }
     }
-    return snapshot?.docs.map((d) => (d.data())).toList();
+
+   List<Map<String, dynamic>>? dataList = snapshot?.docs.map((doc) => doc.data() as Map<String, dynamic>).toList();
+    return dataList;
   }
 
   DocumentReference? _getDoc(List<String> keys) {
