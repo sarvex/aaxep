@@ -1,0 +1,5 @@
+class Images {
+  Images._();
+
+
+}
