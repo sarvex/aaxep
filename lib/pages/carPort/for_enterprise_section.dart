@@ -11,31 +11,36 @@ class ForEnterpriseSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: kAaxepLightWhiteBg,
+        color: Colors.white,
         padding: EdgeInsets.symmetric(vertical: Device.grid(context) * 0.5, horizontal: Device.grid(context) * 2),
-        child:  Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: Column(
           children: [
-            Card(
-              child:  Container(
-                width: 350,
-                child: Column(children: [
-                    SizedBox(width: Device.grid(context) * 4, child: Lottie.asset(LottieJson.enterprise)),
-                    Padding(
-                      padding: EdgeInsets.all(Device.margin(context)),
-                      child: Text('For Enterprise', style: Theme.of(context).textTheme.headline6!.copyWith(fontWeight: FontWeight.bold)),
-                    ),
-                  Padding(
-                    padding: EdgeInsets.all(Device.margin(context)),
-                    child: Text(
-                          'Porter offers the most efficient and time bound logistic services for businesses. With our huge fleet of vehicles we take care of your peak business requirements and bulk booking challenges. Clients also benefit from significant cost savings and improved SLA.', style: Theme.of(context).textTheme.bodyText1),
-                  ),
-                  Padding(padding: EdgeInsets.all(Device.margin(context)), child: SizedBox(height: 50, child: ElevatedButton.icon(onPressed: (){}, icon: const Icon(Icons.arrow_forward_ios_sharp, size: 13), label: const Text('Know More'))))
-                  ]),
-              ),
-              ),
+            Text('For Enterprise', style: Theme.of(context).textTheme.headline3),
+            SizedBox(width: Device.margin(context) * 3, child: const Divider(color: kAaxepPrimary, thickness: 5)),
+            SizedBox(height: Device.column(context)),
+            Row(mainAxisAlignment: MainAxisAlignment.start, children: [
+              Expanded(
+                  flex: 5, child: Center(child: Lottie.asset(LottieJson.enterprise, height: Device.height(context) * 0.35, fit: BoxFit.contain))),
+              Expanded(
+                  flex: 5,
+                  child: Container(
+                      width: 350,
+                      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                        Padding(
+                            padding: EdgeInsets.all(Device.margin(context)),
+                            child: const Text(
+                              'Porter offers the most efficient and time bound logistic services for businesses. With our huge fleet of vehicles we take care of your peak business requirements and bulk booking challenges. Clients also benefit from significant cost savings and improved SLA.',
+                              style: TextStyle(fontSize: 15,  height: 1.64),
+                            )),
+                        Padding(
+                            padding: EdgeInsets.all(Device.margin(context)),
+                            child: SizedBox(
+                                height: 50,
+                                child: ElevatedButton.icon(
+                                    onPressed: () {}, icon: const Icon(Icons.arrow_forward_ios_sharp, size: 13), label: const Text('Know More'))))
+                      ])))
+            ]),
           ],
-        ),
-        );
+        ));
   }
 }
