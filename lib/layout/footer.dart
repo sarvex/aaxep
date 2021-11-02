@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../config/colors.dart';
+import '../config/images.dart';
 import 'device.dart';
 
 class Footer extends StatelessWidget {
@@ -16,7 +17,7 @@ class Footer extends StatelessWidget {
           Padding(
             padding: EdgeInsets.symmetric(vertical: Device.grid(context) * 0.5),
             child: Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
-              Center(child: Text('AAXEP', style: Theme.of(context).textTheme.headline4!.copyWith(color: Colors.white, fontWeight: FontWeight.bold)))
+              Center(child: Image.asset(Images.logo, height: 65))
             ]),
           ),
           const Text('All rights reserved. Copyright © 2021 AAXEP', style: TextStyle(color: Colors.white))

@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:aaxep/config/images.dart';
 import 'package:flutter/material.dart';
 
 import '../../config/colors.dart';
@@ -46,7 +47,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       automaticallyImplyLeading: false,
       title: Padding(
           padding: EdgeInsets.symmetric(horizontal: Device.column(context)),
-          child: Text('AAXEP', style: Theme.of(context).textTheme.headline4!.copyWith(color: kAaxepPrimary, fontWeight: FontWeight.bold))),
+          child: Image.asset(Images.logo, height: 50)),
       actions: [
         Padding(
             padding: EdgeInsets.symmetric(vertical: Device.margin(context) * 0.18, horizontal: Device.margin(context) * 2),
