@@ -8,6 +8,9 @@ analyzer:
     - "lib/i18n/messages_*.dart"
     - "lib/src/http/**"
 
+  errors:
+    lines_longer_than_80_chars: ignore
+
 linter:
   rules:
     - avoid_print
@@ -21,7 +24,3 @@ linter:
     - sized_box_for_whitespace
     - use_full_hex_values_for_flutter_colors
     - use_key_in_widget_constructors
-
-
-  errors:
-    lines_longer_than_80_chars: ignore
