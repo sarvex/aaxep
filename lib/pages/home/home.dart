@@ -50,7 +50,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           child: Image.asset(Images.logo, height: 50)),
       actions: [
         Padding(
-            padding: EdgeInsets.symmetric(vertical: Device.margin(context) * 0.18, horizontal: Device.margin(context) * 2),
+            padding:
+                EdgeInsets.symmetric(vertical: Device.margin(context) * 0.18, horizontal: Device.margin(context) * 2),
             child: ElevatedButton.icon(
                 onPressed: () {},
                 icon: const Icon(Icons.person_add),
@@ -80,10 +81,14 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: Device.margin(context)),
                     child: TextButton(
-                        onPressed: () {}, child: const Text('Support', style: TextStyle(color: kAaxepDeepBlack, fontWeight: FontWeight.bold))),
+                        onPressed: () {},
+                        child: const Text('Support',
+                            style: TextStyle(color: kAaxepDeepBlack, fontWeight: FontWeight.bold))),
                   ),
                   TextButton(
-                      onPressed: () {}, child: const Text('Track order', style: TextStyle(color: kAaxepDeepBlack, fontWeight: FontWeight.bold))),
+                      onPressed: () {},
+                      child: const Text('Track order',
+                          style: TextStyle(color: kAaxepDeepBlack, fontWeight: FontWeight.bold))),
                 ],
               ),
             ]),
