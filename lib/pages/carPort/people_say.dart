@@ -2,7 +2,7 @@ import 'package:aaxep/config/theme.dart';
 import 'package:flutter/material.dart';
 
 import '../../layout/device.dart';
-import '../../layout/feedback_card.dart';
+import '../../widgets/feedback_card.dart';
 
 class PeopleSay extends StatelessWidget {
   const PeopleSay({Key? key}) : super(key: key);

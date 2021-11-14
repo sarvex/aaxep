@@ -1,9 +1,7 @@
 import 'package:aaxep/config/theme.dart';
+import 'package:aaxep/layout/device.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-
-import '../../config/lottie_json.dart';
-import '../../layout/device.dart';
 
 class ForEnterpriseSection extends StatelessWidget {
   const ForEnterpriseSection({Key? key}) : super(key: key);
@@ -22,7 +20,7 @@ class ForEnterpriseSection extends StatelessWidget {
               Expanded(
                   flex: 5,
                   child: Center(
-                      child: Lottie.asset(LottieJson.enterprise,
+                      child: Lottie.asset(AaxepTheme.enterprise,
                           height: Device.height(context) * 0.35, fit: BoxFit.contain))),
               Expanded(
                   flex: 5,

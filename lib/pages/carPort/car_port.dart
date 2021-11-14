@@ -1,6 +1,6 @@
+import 'package:aaxep/widgets/footer.dart';
 import 'package:flutter/material.dart';
 
-import '../../layout/footer.dart';
 import 'for_enterprise_section.dart';
 import 'hero.dart';
 import 'people_say.dart';
@@ -19,12 +19,12 @@ class _CarPortState extends State<CarPort> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
         child: Column(children: const [
-          HeroSection(),
-          StepSection(),
-          WeOfferSection(),
-          PeopleSay(),
-          ForEnterpriseSection(),
-          Footer()
-        ]));
+      HeroSection(),
+      StepSection(),
+      WeOfferSection(),
+      PeopleSay(),
+      ForEnterpriseSection(),
+      Footer()
+    ]));
   }
 }

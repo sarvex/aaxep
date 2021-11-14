@@ -1,11 +1,9 @@
 import 'dart:ui';
 
 import 'package:aaxep/config/theme.dart';
+import 'package:aaxep/layout/device.dart';
+import 'package:aaxep/pages/carPort/car_port.dart';
 import 'package:flutter/material.dart';
-
-import '../../config/images.dart';
-import '../../layout/device.dart';
-import '../carPort/car_port.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -46,7 +44,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       automaticallyImplyLeading: false,
       title: Padding(
           padding: EdgeInsets.symmetric(horizontal: Device.column(context)),
-          child: Image.asset(Images.logo, height: 50)),
+          child: Image.asset(AaxepTheme.logo, height: 50)),
       actions: [
         Padding(
             padding:

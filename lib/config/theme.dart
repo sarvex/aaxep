@@ -1,6 +1,5 @@
+import 'package:aaxep/layout/device.dart';
 import 'package:flutter/material.dart';
-
-import '../layout/device.dart';
 
 class AaxepTheme {
   AaxepTheme._();
@@ -25,6 +24,13 @@ class AaxepTheme {
   static const black = Colors.black;
   static const white = Colors.white;
   static const lightWhite = Color(0xFFfafafa);
+
+  static const logo = 'assets/images/logo.png';
+
+  static const truck = 'assets/lottie/truck.json';
+  static const navigation = 'assets/lottie/navigation.json';
+  static const circleTruck = 'assets/lottie/circle-truck.json';
+  static const enterprise = 'assets/lottie/enterprise.json';
 
   static final ThemeData lightTheme = AaxepTheme._buildAaxepTheme(Brightness.light);
   static final ThemeData darkTheme = AaxepTheme._buildAaxepTheme(Brightness.dark);

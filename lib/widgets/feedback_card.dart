@@ -1,7 +1,7 @@
 import 'package:aaxep/config/theme.dart';
 import 'package:flutter/material.dart';
 
-import 'device.dart';
+import '../layout/device.dart';
 
 class FeedbackCard extends StatelessWidget {
   const FeedbackCard(

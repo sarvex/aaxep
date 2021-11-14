@@ -1,9 +1,7 @@
 import 'package:aaxep/config/theme.dart';
+import 'package:aaxep/layout/device.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-
-import '../../config/lottie_json.dart';
-import '../../layout/device.dart';
 
 class StepSection extends StatelessWidget {
   const StepSection({Key? key}) : super(key: key);
@@ -47,7 +45,7 @@ class StepSection extends StatelessWidget {
               flex: 5,
               child: Center(
                   child:
-                      Lottie.asset(LottieJson.navigation, height: Device.height(context) * 0.5, fit: BoxFit.contain)))
+                      Lottie.asset(AaxepTheme.navigation, height: Device.height(context) * 0.5, fit: BoxFit.contain)))
         ]));
   }
 }

@@ -1,10 +1,8 @@
 import 'package:aaxep/config/theme.dart';
+import 'package:aaxep/layout/device.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:lottie/lottie.dart';
-
-import '../../config/lottie_json.dart';
-import '../../layout/device.dart';
 
 class HeroSection extends StatefulWidget {
   const HeroSection({Key? key}) : super(key: key);
@@ -36,7 +34,7 @@ class _HeroSectionState extends State<HeroSection> {
   Widget build(BuildContext context) {
     return Column(children: [
       Stack(children: [
-        Lottie.asset(LottieJson.truck, width: double.infinity, height: Device.height(context) * 0.9, fit: BoxFit.fill),
+        Lottie.asset(AaxepTheme.truck, width: double.infinity, height: Device.height(context) * 0.9, fit: BoxFit.fill),
         _getEstimate()
       ])
     ]);
