@@ -1,8 +1,8 @@
+import 'package:aaxep/config/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:lottie/lottie.dart';
 
-import '../../config/colors.dart';
 import '../../config/lottie_json.dart';
 import '../../layout/device.dart';
 
@@ -34,9 +34,11 @@ class _HeroSectionState extends State<HeroSection> {
 
   @override
   Widget build(BuildContext context) {
-    return  Column(children: [
-      Stack(
-          children: [Lottie.asset(LottieJson.truck, width: double.infinity, height: Device.height(context) * 0.9, fit: BoxFit.fill), _getEstimate()])
+    return Column(children: [
+      Stack(children: [
+        Lottie.asset(LottieJson.truck, width: double.infinity, height: Device.height(context) * 0.9, fit: BoxFit.fill),
+        _getEstimate()
+      ])
     ]);
   }
 
@@ -48,7 +50,8 @@ class _HeroSectionState extends State<HeroSection> {
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Flexible(child: Container(
+                  Flexible(
+                      child: Container(
                     constraints: BoxConstraints(maxWidth: Device.grid(context) * 1.8),
                     child: FormField<String>(builder: (state) {
                       return InputDecorator(
@@ -78,26 +81,31 @@ class _HeroSectionState extends State<HeroSection> {
                       );
                     }),
                   )),
-                  SizedBox(height: Device.margin(context) * 2.7, child: const VerticalDivider(color: kAaxepDarkGray)),
+                  SizedBox(
+                      height: Device.margin(context) * 2.7, child: const VerticalDivider(color: AaxepTheme.darkGrey)),
                   Flexible(
                       child: TextFormField(
-                          decoration: const InputDecoration(labelText: 'PickUp Address', border: InputBorder.none, focusedBorder: InputBorder.none),
+                          decoration: const InputDecoration(
+                              labelText: 'PickUp Address', border: InputBorder.none, focusedBorder: InputBorder.none),
                           validator: (value) {
                             return value == null ? 'PickUp address can\'t be empty' : null;
                           })),
-                  SizedBox(height: Device.margin(context) * 2.7, child: const VerticalDivider(color: kAaxepDarkGray)),
+                  SizedBox(
+                      height: Device.margin(context) * 2.7, child: const VerticalDivider(color: AaxepTheme.darkGrey)),
                   Flexible(
                       child: TextFormField(
-                          decoration: const InputDecoration(labelText: 'DropOff Address', border: InputBorder.none, focusedBorder: InputBorder.none),
+                          decoration: const InputDecoration(
+                              labelText: 'DropOff Address', border: InputBorder.none, focusedBorder: InputBorder.none),
                           validator: (value) {
                             return value == null ? 'DropOff address can\'t be empty' : null;
                           })),
-                  SizedBox(height: Device.margin(context) * 2.7, child: const VerticalDivider(color: kAaxepDarkGray)),
+                  SizedBox(
+                      height: Device.margin(context) * 2.7, child: const VerticalDivider(color: AaxepTheme.darkGrey)),
                   Flexible(
                       child: TextFormField(
                           inputFormatters: [
-                            LengthLimitingTextInputFormatter(10),
-                          ],
+                        LengthLimitingTextInputFormatter(10),
+                      ],
                           decoration: const InputDecoration(
                             prefixText: '+91',
                             labelText: 'Mobile Number',
@@ -107,13 +115,17 @@ class _HeroSectionState extends State<HeroSection> {
                           validator: (value) {
                             return value == null ? 'Mobile Number can\'t be empty' : null;
                           })),
-                  SizedBox(height: Device.margin(context) * 2.7, child: const VerticalDivider(color: kAaxepDarkGray)),
+                  SizedBox(
+                      height: Device.margin(context) * 2.7, child: const VerticalDivider(color: AaxepTheme.darkGrey)),
                   Flexible(
                       child: TextFormField(
-                        decoration: const InputDecoration(labelText: 'Name (Optional)', border: InputBorder.none, focusedBorder: InputBorder.none),
-                      )),
-                  SizedBox(height: Device.margin(context) * 2.7, child: const VerticalDivider(color: kAaxepDarkGray)),
-                  Flexible(child: Container(
+                    decoration: const InputDecoration(
+                        labelText: 'Name (Optional)', border: InputBorder.none, focusedBorder: InputBorder.none),
+                  )),
+                  SizedBox(
+                      height: Device.margin(context) * 2.7, child: const VerticalDivider(color: AaxepTheme.darkGrey)),
+                  Flexible(
+                      child: Container(
                     constraints: BoxConstraints(maxWidth: Device.grid(context) * 1.8),
                     child: FormField<String>(builder: (state) {
                       return InputDecorator(
@@ -143,7 +155,8 @@ class _HeroSectionState extends State<HeroSection> {
                       );
                     }),
                   )),
-                  SizedBox(height: Device.margin(context) * 2.7, child: const VerticalDivider(color: kAaxepDarkGray)),
+                  SizedBox(
+                      height: Device.margin(context) * 2.7, child: const VerticalDivider(color: AaxepTheme.darkGrey)),
                   Flexible(
                       child: SizedBox(
                           height: Device.margin(context) * 2.4,
@@ -155,5 +168,4 @@ class _HeroSectionState extends State<HeroSection> {
                   SizedBox(width: Device.margin(context) * 0.4)
                 ],
               ))));
-
 }

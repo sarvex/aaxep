@@ -1,9 +1,8 @@
 import 'dart:ui';
 
+import 'package:aaxep/config/theme.dart';
 import 'package:flutter/material.dart';
 
-import '../../config/colors.dart';
-import '../../config/constants.dart';
 import '../../config/images.dart';
 import '../../layout/device.dart';
 import '../carPort/car_port.dart';
@@ -61,8 +60,9 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                 ))),
         TextButton.icon(
             onPressed: () {},
-            icon: const Icon(Icons.call, color: kAaxepPrimary, size: kPadding * 5),
-            label: const Text('+91 98099 99044', style: TextStyle(color: kAaxepPrimary, fontWeight: FontWeight.bold))),
+            icon: const Icon(Icons.call, color: AaxepTheme.primary, size: Dimension.padding * 5),
+            label: const Text('+91 98099 99044',
+                style: TextStyle(color: AaxepTheme.primary, fontWeight: FontWeight.bold))),
         SizedBox(width: Device.column(context))
       ],
       bottom: PreferredSize(
@@ -83,12 +83,12 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                     child: TextButton(
                         onPressed: () {},
                         child: const Text('Support',
-                            style: TextStyle(color: kAaxepDeepBlack, fontWeight: FontWeight.bold))),
+                            style: TextStyle(color: AaxepTheme.deepBlack, fontWeight: FontWeight.bold))),
                   ),
                   TextButton(
                       onPressed: () {},
                       child: const Text('Track order',
-                          style: TextStyle(color: kAaxepDeepBlack, fontWeight: FontWeight.bold))),
+                          style: TextStyle(color: AaxepTheme.deepBlack, fontWeight: FontWeight.bold))),
                 ],
               ),
             ]),
