@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'app_router.dart';
-import 'config/colors.dart';
 import 'config/theme.dart';
 
 void main() {
@@ -15,14 +14,13 @@ class MyApp extends StatelessWidget {
 
   static final navigator = GlobalKey<NavigatorState>();
 
-
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Aaxep',
-        color: kAaxepPrimary,
-        theme: kAaxepLightTheme,
+        color: AaxepTheme.primary,
+        theme: AaxepTheme.lightTheme,
         navigatorKey: navigator,
         navigatorObservers: [],
         onGenerateRoute: generateRoute,

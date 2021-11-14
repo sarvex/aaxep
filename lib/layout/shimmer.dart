@@ -1,7 +1,6 @@
+import 'package:aaxep/layout/device.dart';
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
-
-import '../config/constants.dart';
 
 class ContainerShimmer extends StatelessWidget {
   const ContainerShimmer({required this.width, required this.height});
@@ -17,7 +16,8 @@ class ContainerShimmer extends StatelessWidget {
         child: Container(
             width: width,
             height: height,
-            decoration: const BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(kPadding * 2)))));
+            decoration: const BoxDecoration(
+                color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(Dimension.padding * 2)))));
   }
 }
 
@@ -35,22 +35,22 @@ class ListShimmer extends StatelessWidget {
             children: List.generate(
           length,
           (index) => Padding(
-            padding: const EdgeInsets.symmetric(vertical: kPadding),
+            padding: const EdgeInsets.symmetric(vertical: Dimension.padding),
             child: Row(crossAxisAlignment: CrossAxisAlignment.center, children: <Widget>[
               Container(
-                  decoration: const BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(kPadding * 2))),
-                  width: kPadding * 10,
-                  height: kPadding * 10),
+                  decoration: const BoxDecoration(
+                      color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(Dimension.padding * 2))),
+                  width: Dimension.padding * 10,
+                  height: Dimension.padding * 10),
               const Padding(padding: EdgeInsets.symmetric(horizontal: 8.0)),
               Expanded(
                   child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: <Widget>[
-                Container(width: double.infinity, height: kPadding * 2, color: Colors.white),
+                Container(width: double.infinity, height: Dimension.padding * 2, color: Colors.white),
                 const Padding(padding: EdgeInsets.symmetric(vertical: 2.0)),
-                Container(width: double.infinity, height: kPadding * 2, color: Colors.white),
+                Container(width: double.infinity, height: Dimension.padding * 2, color: Colors.white),
                 const Padding(padding: EdgeInsets.symmetric(vertical: 2.0)),
-                Container(width: kShimmerWidth, height: kPadding * 2, color: Colors.white)
+                Container(width: Dimension.shimmerWidth, height: Dimension.padding * 2, color: Colors.white)
               ])),
-
             ]),
           ),
         )));
