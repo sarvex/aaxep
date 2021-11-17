@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'pages/home/home.dart';
-
+import 'pages/home.dart';
 
 class AppRouter {
   AppRouter._();
@@ -10,7 +9,6 @@ class AppRouter {
   static const landingPageRoute = '/';
   static const introPageRoute = '/intro';
   static const homePageRoute = '/home';
-
 }
 
 Route<dynamic> generateRoute(RouteSettings settings) {

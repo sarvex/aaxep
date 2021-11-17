@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'responsive_builder.dart';
+import 'builder.dart';
 
 class Dimension {
   Dimension._();
