@@ -1,10 +1,10 @@
 import 'package:aaxep/widgets/footer.dart';
 import 'package:flutter/material.dart';
 
-import 'for_enterprise_section.dart';
+import 'for_enterprise.dart';
 import 'hero.dart';
 import 'people_say.dart';
-import 'steps_section.dart';
+import 'steps.dart';
 import 'we_offer.dart';
 
 class CarPort extends StatefulWidget {

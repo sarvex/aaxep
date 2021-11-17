@@ -17,6 +17,7 @@ dependencies:
   flutter_bloc: ^7.3.1
   flutter_dotenv: ^5.0.2
   get: ^4.3.8
+  google_fonts: ^2.1.0
   intl: ^0.17.0
   jiffy: ^4.1.0
   logger: ^1.1.0
@@ -42,9 +43,9 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    - assets/fonts
     - assets/images/
     - assets/lottie/
-    - assets/
 
 flutter_intl:
   main_locale: en_US

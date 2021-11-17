@@ -6,11 +6,11 @@ import 'config/theme.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MyApp());
+  runApp(const Aaxep());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class Aaxep extends StatelessWidget {
+  const Aaxep({Key? key}) : super(key: key);
 
   static final navigator = GlobalKey<NavigatorState>();
 

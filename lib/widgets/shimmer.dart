@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
 class ContainerShimmer extends StatelessWidget {
-  const ContainerShimmer({required this.width, required this.height});
+  const ContainerShimmer({required this.width, required this.height, Key? key}) : super(key: key);
 
   final double width;
   final double height;
@@ -22,7 +22,7 @@ class ContainerShimmer extends StatelessWidget {
 }
 
 class ListShimmer extends StatelessWidget {
-  const ListShimmer({required this.length});
+  const ListShimmer({required this.length, Key? key}) : super(key: key);
 
   final int length;
 
