@@ -18,13 +18,6 @@ class _CarPortState extends State<CarPort> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-        child: Column(children: const [
-      HeroSection(),
-      StepSection(),
-      WeOfferSection(),
-      PeopleSay(),
-      ForEnterpriseSection(),
-      Footer()
-    ]));
+        child: Column(children: const [HeroSection(), StepSection(), WeOfferSection(), PeopleSay(), ForEnterpriseSection(), Footer()]));
   }
 }

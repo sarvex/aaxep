@@ -4,6 +4,7 @@ import 'package:aaxep/config/theme.dart';
 import 'package:aaxep/layout/device.dart';
 import 'package:aaxep/pages/car_port.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -37,18 +38,26 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: _appbar(), body: _body());
+    return Device(desktop: Scaffold(appBar: _appbarDesktop(), body: _body()), mobile: Scaffold(appBar: _appbarMobile(), body: _body()));
   }
 
-  PreferredSizeWidget _appbar() => AppBar(
+  PreferredSizeWidget _appbarMobile() => AppBar(
+          automaticallyImplyLeading: false,
+          title: Padding(padding: EdgeInsets.symmetric(horizontal: Device.column(context)), child: Image.asset(AaxepTheme.logo, height: 50)),
+          actions: [
+            IconButton(
+                icon: const Icon(Icons.call),
+                onPressed: () {
+                  _makePhoneCall('+91 98099 99044');
+                })
+          ]);
+
+  PreferredSizeWidget _appbarDesktop() => AppBar(
       automaticallyImplyLeading: false,
-      title: Padding(
-          padding: EdgeInsets.symmetric(horizontal: Device.column(context)),
-          child: Image.asset(AaxepTheme.logo, height: 50)),
+      title: Padding(padding: EdgeInsets.symmetric(horizontal: Device.column(context)), child: Image.asset(AaxepTheme.logo, height: 50)),
       actions: [
         Padding(
-            padding:
-                EdgeInsets.symmetric(vertical: Device.margin(context) * 0.18, horizontal: Device.margin(context) * 2),
+            padding: EdgeInsets.symmetric(vertical: Device.margin(context) * 0.18, horizontal: Device.margin(context) * 2),
             child: ElevatedButton.icon(
                 onPressed: () {},
                 icon: const Icon(Icons.person_add),
@@ -57,10 +66,11 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                   child: const Text('JOIN US'),
                 ))),
         TextButton.icon(
-            onPressed: () {},
+            onPressed: () {
+              _makePhoneCall('+91 98099 99044');
+            },
             icon: const Icon(Icons.call, color: AaxepTheme.primary, size: Dimension.padding * 5),
-            label: const Text('+91 98099 99044',
-                style: TextStyle(color: AaxepTheme.primary, fontWeight: FontWeight.bold))),
+            label: const Text('+91 98099 99044', style: TextStyle(color: AaxepTheme.primary, fontWeight: FontWeight.bold))),
         SizedBox(width: Device.column(context))
       ],
       bottom: PreferredSize(
@@ -79,18 +89,22 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: Device.margin(context)),
                     child: TextButton(
-                        onPressed: () {},
-                        child: const Text('Support',
-                            style: TextStyle(color: AaxepTheme.deepBlack, fontWeight: FontWeight.bold))),
+                        onPressed: () {}, child: const Text('Support', style: TextStyle(color: AaxepTheme.deepBlack, fontWeight: FontWeight.bold))),
                   ),
                   TextButton(
-                      onPressed: () {},
-                      child: const Text('Track order',
-                          style: TextStyle(color: AaxepTheme.deepBlack, fontWeight: FontWeight.bold))),
+                      onPressed: () {}, child: const Text('Track order', style: TextStyle(color: AaxepTheme.deepBlack, fontWeight: FontWeight.bold))),
                 ],
               ),
             ]),
           )));
 
   Widget _body() => TabBarView(controller: _tabController, children: _tabView.map((view) => view).toList());
+
+  Future<void> _makePhoneCall(String phoneNumber) async {
+    final Uri launchUri = Uri(
+      scheme: 'tel',
+      path: phoneNumber,
+    );
+    await launch(launchUri.toString());
+  }
 }

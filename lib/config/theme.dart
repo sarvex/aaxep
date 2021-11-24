@@ -27,6 +27,7 @@ class AaxepTheme {
   static const lightWhite = Color(0xFFfafafa);
 
   static const logo = 'assets/images/logo.png';
+  static const truckImg = 'assets/images/truck.jpeg';
 
   static const truck = 'assets/lottie/truck.json';
   static const navigation = 'assets/lottie/navigation.json';
@@ -52,6 +53,7 @@ class AaxepTheme {
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
             style: ElevatedButton.styleFrom(
+              padding: const EdgeInsets.all(12),
                 primary: AaxepTheme.primary, // background
                 onPrimary: Colors.white,
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)))),

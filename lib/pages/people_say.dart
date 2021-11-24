@@ -30,28 +30,37 @@ class PeopleSay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        width: double.infinity,
-        padding: EdgeInsets.symmetric(vertical: Device.grid(context) * 0.5, horizontal: Device.grid(context) * 2),
-        child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
-          Text('What people say', style: Theme.of(context).textTheme.headline3),
-          SizedBox(width: Device.margin(context) * 3, child: const Divider(color: AaxepTheme.primary, thickness: 5)),
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: Device.column(context)),
-            child: IntrinsicHeight(
-                child: Wrap(
-                    alignment: WrapAlignment.center,
-                    crossAxisAlignment: WrapCrossAlignment.center,
-                    spacing: Device.column(context),
-                    runSpacing: Device.margin(context),
-                    children: List.generate(
-                        _peopleSayText.length,
-                        (index) => FeedbackCard(
-                            icon: _peopleSatImgAndIcon.values.elementAt(index),
-                            body: _peopleSayText.values.elementAt(index),
-                            title: _peopleSayText.keys.elementAt(index),
-                            img: _peopleSatImgAndIcon.keys.elementAt(index))))),
-          )
-        ]));
+    return Device(desktop: _desktop(context), mobile: _mobile(context));
   }
+
+  Widget _desktop(context) => Container(
+      width: double.infinity,
+      padding: EdgeInsets.symmetric(vertical: Device.grid(context) * 0.5, horizontal: Device.grid(context) * 2),
+      child: _view(context));
+
+  Widget _mobile(context) => Container(
+      width: double.infinity,
+      padding: EdgeInsets.all(Device.margin(context)),
+      child: _view(context));
+
+  Widget _view(context) => Column(mainAxisAlignment: MainAxisAlignment.start, children: [
+    Text('What people say', style: Theme.of(context).textTheme.headline3),
+    SizedBox(width: Device.margin(context) * 3, child: const Divider(color: AaxepTheme.primary, thickness: 5)),
+    Padding(
+      padding: EdgeInsets.symmetric(vertical: Device.column(context)),
+      child: IntrinsicHeight(
+          child: Wrap(
+              alignment: WrapAlignment.center,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              spacing: Device.column(context),
+              runSpacing: Device.margin(context),
+              children: List.generate(
+                  _peopleSayText.length,
+                      (index) => FeedbackCard(
+                      icon: _peopleSatImgAndIcon.values.elementAt(index),
+                      body: _peopleSayText.values.elementAt(index),
+                      title: _peopleSayText.keys.elementAt(index),
+                      img: _peopleSatImgAndIcon.keys.elementAt(index))))),
+    )
+  ]);
 }
