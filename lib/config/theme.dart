@@ -57,7 +57,7 @@ class AaxepTheme {
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)))),
         scaffoldBackgroundColor: AaxepTheme.background,
         errorColor: AaxepTheme.darkGrey,
-        textTheme: GoogleFonts.poppinsTextTheme(base.textTheme)
+        textTheme: GoogleFonts.poppinsTextTheme(base.textTheme),
         // textTheme: _buildAaxepLightTextTheme(base.textTheme),
         // primaryTextTheme: _buildAaxepLightTextTheme(base.primaryTextTheme),
         primaryIconTheme: base.iconTheme.copyWith(color: AaxepTheme.primary),
