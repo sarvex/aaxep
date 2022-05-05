@@ -1,6 +1,7 @@
 import 'package:aaxep/widgets/footer.dart';
 import 'package:flutter/material.dart';
 
+import '../layout/device.dart';
 import 'for_enterprise.dart';
 import 'hero.dart';
 import 'people_say.dart';
@@ -17,7 +18,8 @@ class CarPort extends StatefulWidget {
 class _CarPortState extends State<CarPort> {
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-        child: Column(children: const [HeroSection(), StepSection(), WeOfferSection(), PeopleSay(), ForEnterpriseSection(), Footer()]));
+    return Device(
+        desktop: ListView(children: const [HeroSection(), StepSection(), WeOfferSection(), PeopleSay(), ForEnterpriseSection(), Footer()]),
+        mobile: ListView(children: const [HeroSection(), WeOfferSection(), PeopleSay(), Footer()]));
   }
 }

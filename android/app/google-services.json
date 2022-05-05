@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "748712014583",
+    "firebase_url": "https://aaxepr-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "aaxepr",
+    "storage_bucket": "aaxepr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748712014583:android:2d58ef09deb4a529eb59f2",
+        "android_client_info": {
+          "package_name": "com.example.aaxep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748712014583-k7ua8kklfkesbd15u72o29ficr9771bq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB23Bc577iwGpxCHlkZCHM32YC0L3QxDzo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748712014583-k7ua8kklfkesbd15u72o29ficr9771bq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "748712014583-kmgvl2jk95jofssspfnh6lqp0thpkul4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.aaxep"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

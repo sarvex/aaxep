@@ -1,12 +1,17 @@
+import 'package:aaxep/firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:form_builder_validators/localization/l10n.dart';
 import 'package:get/get.dart';
 
 import 'app_router.dart';
 import 'config/theme.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const Aaxep());
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );  runApp(const Aaxep());
 }
 
 class Aaxep extends StatelessWidget {
@@ -23,6 +28,9 @@ class Aaxep extends StatelessWidget {
         theme: AaxepTheme.lightTheme,
         navigatorKey: navigator,
         navigatorObservers: [],
+        localizationsDelegates: const [
+          FormBuilderLocalizations.delegate,
+        ],
         onGenerateRoute: generateRoute,
         initialRoute: AppRouter.homePageRoute);
   }
