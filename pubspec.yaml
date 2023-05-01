@@ -12,7 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  bloc: ^7.2.1
+  bloc: ^8.0.0
   dwds: ^11.3.0
   flutter_bloc: ^7.3.1
   flutter_dotenv: ^5.0.2
