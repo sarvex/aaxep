@@ -19,7 +19,7 @@ dependencies:
   get: ^4.3.8
   google_fonts: ^2.1.0
   intl: ^0.18.0
-  jiffy: ^4.1.0
+  jiffy: ^6.0.0
   logger: ^1.1.0
   lottie: ^1.2.1
   provider: ^6.0.1
