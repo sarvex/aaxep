@@ -25,7 +25,7 @@ dependencies:
   provider: ^6.0.1
   shared_preferences: ^2.0.8
   shimmer: ^2.0.0
-  strings: ^1.0.0
+  strings: ^2.0.0
   blobs: ^2.0.0
   url_launcher: ^6.0.15
   firebase_core: ^2.0.0
